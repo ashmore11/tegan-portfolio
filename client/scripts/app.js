@@ -6,15 +6,15 @@ class App {
 
 	constructor() {
 
-		const nav = new Navigation();
+		// const nav = new Navigation();
 
-		nav.on('url:changed', id => {
+		// nav.on('url:changed', id => {
 			
-			this.renderView(id);
+		// 	this.renderView(id);
 
-		});
+		// });
 
-		nav.init();
+		// nav.init();
 
 	}
 

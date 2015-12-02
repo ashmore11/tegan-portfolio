@@ -66,18 +66,18 @@
 
 	var App = (function () {
 		function App() {
-			var _this = this;
+
+			// const nav = new Navigation();
+
+			// nav.on('url:changed', id => {
+
+			// 	this.renderView(id);
+
+			// });
+
+			// nav.init();
 
 			_classCallCheck(this, App);
-
-			var nav = new _navigation2.default();
-
-			nav.on('url:changed', function (id) {
-
-				_this.renderView(id);
-			});
-
-			nav.init();
 		}
 
 		_createClass(App, [{
