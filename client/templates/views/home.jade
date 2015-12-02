@@ -7,6 +7,11 @@ block content
     h1 #{page.title}
     p #{page.description}
 
-    //- each item in work
+    ul.work
+    
+      each item in work
       
-    //-   img(id="#{item.slug}" src="images/uploads/#{item.image.filename}")
+        li.work-item
+          
+          img(id="#{item.slug}" src="images/uploads/#{item.image.filename}")
+          h2 #{item.title}
