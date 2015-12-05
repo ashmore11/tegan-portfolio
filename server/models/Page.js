@@ -13,15 +13,39 @@ var Pages = new keystone.List('page', {
 
 Pages.add({
 	meta:{
-		title: { type: Types.Text },
-		description: { type: Types.Text },
-		keywords: { type: Types.Text },
+		title: {
+			type: Types.Text,
+			collapse: true
+		},
+		description: {
+			type: Types.Text,
+			collapse: true
+		},
+		keywords: {
+			type: Types.Text,
+			collapse: true
+		},
 		og: {
-			title: { type: Types.Text },
-			description: { type: Types.Text },
-			image: { type: Types.Text },
-			url: { type: Types.Url },
-			type: { type: Types.Text }
+			title: { 
+				type: Types.Text,
+				collapse: true
+			},
+			description: {
+				type: Types.Text,
+				collapse: true
+			},
+			image: { 
+				type: Types.Text,
+				collapse: true
+			},
+			url: { 
+				type: Types.Url,
+				collapse: true
+			},
+			type: { 
+				type: Types.Text,
+				collapse: true
+			}
 		}
 	},
 	title: { 

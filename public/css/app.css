@@ -16,7 +16,7 @@
 
 /* line 14 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/rupture/rupture/index.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
+/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
 
 /* line 10 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
 
@@ -36,7 +36,7 @@
 
 /* line 90 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/flex.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
+/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
 
 /* line 11 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
 
@@ -52,7 +52,7 @@
 
 /* line 19 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/image.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
+/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
 
 /* line 8 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
 
@@ -100,7 +100,7 @@
 
 /* line 5 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/reset.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
+/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
 
 /* line 12 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
 
@@ -150,9 +150,9 @@
 
 /* line 1 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
 
-/* line 25 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
+/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
+/* line 30 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
 
 /* line 12 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
 
@@ -301,6 +301,13 @@ html span {
   display: inline-block;
 }
 
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
+html a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+
 /* line 10 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/app.styl */
 /**
  * ------------------------
@@ -410,25 +417,40 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/page.styl */
+/* line 17 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/page.styl */
 
-/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+/* line 17 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
 
 /* line 1 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
 
 /* line 3 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
-#home li.work-item {
-  display: inline-block;
+#home ul {
+  text-align: center;
 }
 
 /* line 6 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
-#home img {
-  max-width: 400px;
+#home ul li.work-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px;
+}
+
+/* line 11 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+#home ul li.work-item img {
+  -webkit-box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+}
+
+/* line 14 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+#home ul li.work-item h2 {
+  text-align: left;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 /* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
 
-/* line 3 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/about.styl */
+/* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/about.styl */
 
 /* line 1 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/about.styl */
 

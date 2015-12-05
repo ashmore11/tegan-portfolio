@@ -4,14 +4,14 @@ block content
 
   #home.page
 
-    h1 #{page.title}
-    p #{page.description}
+    //- h1 #{page.title}
+    //- p #{page.description}
 
     ul.work
     
       each item in work
       
         li.work-item
-          
-          img(id="#{item.slug}" src="images/uploads/#{item.image.filename}")
-          h2 #{item.title}
+          a(href="#")
+            img(id="#{item.slug}" src="images/uploads/#{item.image.filename}")
+            h2 #{item.title}
