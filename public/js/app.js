@@ -66,18 +66,18 @@
 
 	var App = (function () {
 		function App() {
-
-			// const nav = new Navigation();
-
-			// nav.on('url:changed', id => {
-
-			// 	this.renderView(id);
-
-			// });
-
-			// nav.init();
+			var _this = this;
 
 			_classCallCheck(this, App);
+
+			var nav = new _navigation2.default();
+
+			nav.on('url:changed', function (id) {
+
+				_this.renderView(id);
+			});
+
+			nav.init();
 		}
 
 		_createClass(App, [{
@@ -17157,21 +17157,74 @@
 
 /***/ },
 /* 6 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	Object.defineProperty(exports, "__esModule", {
-		value: true
+	  value: true
 	});
+
+	var _jquery = __webpack_require__(5);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Home = function Home() {
-		_classCallCheck(this, Home);
+	var Home = (function () {
+	  function Home() {
+	    _classCallCheck(this, Home);
 
-		console.log('---[ VIEW HOME ]---');
-	};
+	    this.$el = (0, _jquery2.default)('#home');
+	    this.$workItem = this.$el.find('li.work-item');
+
+	    this.bindEvents();
+	  }
+
+	  _createClass(Home, [{
+	    key: 'bindEvents',
+	    value: function bindEvents() {
+
+	      this.$workItem.on('mouseenter', this.toggleWork.bind(this));
+	      this.$workItem.on('mouseleave', this.toggleWork.bind(this));
+	    }
+	  }, {
+	    key: 'unbindEvents',
+	    value: function unbindEvents() {
+
+	      this.$workItem.off('mouseenter');
+	      this.$workItem.off('mouseleave');
+	    }
+	  }, {
+	    key: 'toggleWork',
+	    value: function toggleWork(event) {
+
+	      var target = (0, _jquery2.default)(event.currentTarget);
+
+	      switch (event.type) {
+
+	        case 'mouseenter':
+
+	          this.$workItem.not(target).addClass('blur');
+
+	          break;
+
+	        case 'mouseleave':
+
+	          this.$workItem.removeClass('blur');
+
+	          break;
+
+	      }
+	    }
+	  }]);
+
+	  return Home;
+	})();
 
 	exports.default = Home;
 

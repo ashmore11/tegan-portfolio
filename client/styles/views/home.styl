@@ -8,10 +8,19 @@
       vertical-align: top
       margin: 30px
       
-      img
-        box-shadow: 0 0 15px 1px rgba(black,0.1)
-      
-      h2
-        text-align: left
-        font-size: 16px
-        margin-top: 10px
+      a
+        
+        img
+          box-shadow: 0 0 15px 1px rgba(black,0.1)
+          transition: all 1s $ease-out-quart
+          transform-origin: 50% 
+        
+        h2
+          text-align: left
+          font-size: 16px
+          margin-top: 10px
+            
+      &.blur
+        a
+          img
+            -webkit-filter: blur(5px)

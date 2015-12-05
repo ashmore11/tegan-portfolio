@@ -16,7 +16,7 @@
 
 /* line 14 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/rupture/rupture/index.styl */
 
-/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
 
 /* line 10 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/index.styl */
 
@@ -36,7 +36,7 @@
 
 /* line 90 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/flex.styl */
 
-/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
 
 /* line 11 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/gradients.styl */
 
@@ -52,7 +52,7 @@
 
 /* line 19 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/image.styl */
 
-/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
 
 /* line 8 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/normalize/index.styl */
 
@@ -100,7 +100,7 @@
 
 /* line 5 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/reset.styl */
 
-/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
 
 /* line 12 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/nib/lib/nib/text/index.styl */
 
@@ -150,9 +150,9 @@
 
 /* line 1 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
 
-/* line 29 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
+/* line 30 : /Users/scott/Desktop/work/tegan-portfolio/node_modules/jeet/stylus/jeet/_grid.styl */
 
-/* line 30 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
+/* line 27 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
 
 /* line 12 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
 
@@ -282,7 +282,7 @@ html * {
 
 /* line 15 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/reset.styl */
 html body {
-  background-color: #eee;
+  background-color: #fff;
   color: #000;
 }
 
@@ -417,9 +417,9 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 17 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/page.styl */
+/* line 26 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/page.styl */
 
-/* line 17 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+/* line 31 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
 
 /* line 1 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
 
@@ -436,16 +436,37 @@ h2 {
 }
 
 /* line 11 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
-#home ul li.work-item img {
+
+/* line 13 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+#home ul li.work-item a img {
   -webkit-box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
   box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+  -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  -o-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
 }
 
-/* line 14 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
-#home ul li.work-item h2 {
+/* line 18 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+#home ul li.work-item a h2 {
   text-align: left;
   font-size: 16px;
   margin-top: 10px;
+}
+
+/* line 23 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+
+/* line 24 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+
+/* line 25 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
+#home ul li.work-item.blur a img {
+  -webkit-filter: blur(5px);
 }
 
 /* line 7 : /Users/scott/Desktop/work/tegan-portfolio/client/styles/views/home.styl */
