@@ -18,7 +18,7 @@ export default class Home {
 
   }
 
-  unbindEvents() {
+  unbind() {
 
     this.$workItem.off('mouseenter');
     this.$workItem.off('mouseleave');

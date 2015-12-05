@@ -84,7 +84,13 @@
 			key: 'renderView',
 			value: function renderView(id) {
 
-				var view = new this.views[id]();
+				if (this.view) {
+
+					this.view.unbind();
+					this.view = null;
+				}
+
+				this.view = new this.views[id]();
 			}
 		}, {
 			key: 'views',
@@ -17193,8 +17199,8 @@
 	      this.$workItem.on('mouseleave', this.toggleWork.bind(this));
 	    }
 	  }, {
-	    key: 'unbindEvents',
-	    value: function unbindEvents() {
+	    key: 'unbind',
+	    value: function unbind() {
 
 	      this.$workItem.off('mouseenter');
 	      this.$workItem.off('mouseleave');
@@ -17234,17 +17240,31 @@
 
 	'use strict';
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Example = function Example() {
-		_classCallCheck(this, Example);
+	var Example = (function () {
+		function Example() {
+			_classCallCheck(this, Example);
 
-		console.log('---[ VIEW EXAMPLE ]---');
-	};
+			console.log('---[ VIEW EXAMPLE ]---');
+		}
+
+		_createClass(Example, [{
+			key: 'unbind',
+			value: function unbind() {
+
+				console.log('[ UNBIND ]');
+			}
+		}]);
+
+		return Example;
+	})();
 
 	exports.default = Example;
 

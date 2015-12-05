@@ -29,7 +29,14 @@ class App {
 
 	renderView(id) {
 
-		const view = new this.views[id]();
+		if(this.view) {
+
+			this.view.unbind();
+			this.view = null;
+
+		}
+
+		this.view = new this.views[id]();
 
 	}
 

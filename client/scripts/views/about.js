@@ -6,4 +6,10 @@ export default class Example {
 	
 	}
 
+  unbind() {
+
+    console.log('[ UNBIND ]');
+    
+  }
+
 }
